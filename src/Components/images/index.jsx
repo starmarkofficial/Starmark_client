@@ -7,6 +7,8 @@ import right from './right_arrow.png'
 import ad_banner from './company_banner.png'
 import img_replc from './img_replacement.png'
 import starmark from './starmark.png'
+import demo from './try.png'
+import rating from './rating.png'
 export {
 	get_find,
 	profile_add,
@@ -16,5 +18,7 @@ export {
 	right,
 	ad_banner,
 	img_replc,
-	starmark
+	starmark,
+	demo,
+	rating
 };

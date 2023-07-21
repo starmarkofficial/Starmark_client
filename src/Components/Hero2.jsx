@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
+import Testimonials from './Testimonials/Testimonials'
 
 
 export default function Hero2(){
@@ -22,8 +23,7 @@ export default function Hero2(){
 		<>
 			<div   className="second sm:flex-none md:flex sm:flex-col lg:flex-row">
 				<div  className="features px-10 pt-10 md:w-5/12 ">
-					<p className="head-text text-[#18A6D0] text-3xl font-bold font-sans head-text text-4xl font-bold mx-auto flex justify-center my-5 ClassProperties
-         font-sans ">
+					<p className="head-text text-[#18A6D0] text-3xl font-bold font-sans head-text text-4xl font-bold mx-auto flex justify-center my-5 ClassProperties font-sans ">
 						How It Works?
 					</p>
 					<p className="ctnt py-2 font-sans font-medium">
@@ -78,9 +78,15 @@ export default function Hero2(){
               <div data-aos="fade-up" className="">
 	           <Browser />
                     </div>
-			<div data-aos="fade-up" className="">
+			<div data-aos="fade-up" className="mb-5 sm:mb-20">
 				<ServicesList repImage={img_replc} />
 			</div>
+
+			{/* testimonials */}
+
+			<Testimonials />
+
+
 			<div data-aos="fade-up" className="">
 				<Accordion />
 			</div>
