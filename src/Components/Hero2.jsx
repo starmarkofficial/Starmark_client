@@ -83,8 +83,9 @@ export default function Hero2(){
 			</div>
 
 			{/* testimonials */}
-
-			<Testimonials />
+			<div data-aos="fade-up" className="">
+				<Testimonials />
+			</div>
 
 
 			<div data-aos="fade-up" className="">
