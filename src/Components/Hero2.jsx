@@ -55,8 +55,8 @@ export default function Hero2(){
 							</div>
 						</li>
 					</ul>
-					<Link data-aos="fade-up" to="/auth" className="hidden md:inline font-sans create-profile-btn mx-auto my-4 max-w-96 py-2 px-14 block text-center text-white rounded-[10px] bg-blue-500 hover:drop-shadow-xl">Create Profile Now</Link>
-					<Link  to="/auth" className="inline md:hidden font-sans create-profile-btn mx-auto my-4 max-w-96 py-2 px-14 block text-center text-white rounded-[10px] bg-blue-500 hover:drop-shadow-xl">Create Profile Now</Link>
+					
+					<Link data-aos="fade-up"  to="/auth" className="inline md:hidden font-sans create-profile-btn mx-auto my-4 max-w-96 py-2 px-14 block text-center text-white rounded-[10px] bg-blue-500 hover:drop-shadow-xl">Create Profile Now</Link>
 				</div>
 				{/* CAROUSEL */}
 				
