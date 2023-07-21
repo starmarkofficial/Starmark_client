@@ -21,7 +21,7 @@ export default function Hero2(){
 	
 	return (
 		<>
-			<div   className="second sm:flex-none md:flex sm:flex-col lg:flex-row">
+			<div className="second sm:flex-none md:flex sm:flex-col lg:flex-row">
 				<div  className="features px-10 pt-10 md:w-5/12 ">
 					<p className="head-text text-[#18A6D0] text-3xl font-bold font-sans head-text text-4xl font-bold mx-auto flex justify-center my-5 ClassProperties font-sans ">
 						How It Works?
