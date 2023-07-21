@@ -8,7 +8,7 @@ function Hero() {
     AOS.init();
    }, [])
   return (
-    <section data-aos="fade-up" class="text-gray-600 body-font px-0 md:px-20 lg:px-20 sm:px-20 2xl:px-24 md:py-10 lg:py-10 sm:py-11 2xl:py-11 ">
+    <section  class="text-gray-600 body-font px-0 md:px-20 lg:px-20 sm:px-20 2xl:px-24 md:py-10 lg:py-10 sm:py-11 2xl:py-11 ">
     <div class="container bg-blue-300  mx-auto flex px-10 md:py-11 lg:py-11 sm:py-11 2xl:py-11 md:flex-row flex-col items-center  md:rounded-2xl 2xl:rounded-2xl lg:rounded-2xl">
       <div class="my-5 pl-4 lg:flex-grow md:w-2/5 lg:pr-5 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
         <h1 class="font-sans  title-font sm:text-4xl text-3xl mb-4 font-bold text-black">Get your dream job
