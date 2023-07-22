@@ -11,17 +11,17 @@ export default function ServicesList({}){
 	return(
 		<>
 			<div   className="mt-10 services-container md:w-full sm:flex-none md:flex sm:flex-col lg:flex-row">
-				<div className="services-list md:w-10/12 ml-8 md:ml-10 sm:mx-10">
-				<div class="animate-bounce ml-4 text-white px-3 text-center inline-flex items-center justify-center w-16 h-16  shadow-lg rounded-full bg-blue-300 ">
-				<RocketLaunchIcon/>
-			</div>
+				<div className="services-list md:w-10/12 mx-6 md:ml-10 sm:mx-10">
+					<div class="animate-bounce ml-4 text-white px-3 text-center inline-flex items-center justify-center w-16 h-16  shadow-lg rounded-full bg-blue-300 ">
+						<RocketLaunchIcon/>
+					</div>
 					<div className='head-text text-bold head-text text-4xl font-bold mx-auto
 					 flex justify-center my-5 ClassProperties font-sans ' >
 						Ultimate Services for your Company.
 					</div>
 
 					<div className="desc font-sans">Nunc, porta phasellus nisl ac risus eget lectus neque, mauris. Dictumst mauris, id eget tellus tincidunt sit nisi,  </div>
-					<div className="offered-services flex flex-wrap justify-center mx-3 md:mx-auto">
+					<div className="offered-services flex flex-wrap justify-center mx-5 md:mx-auto">
 
 						{/*  option */}	
 						<div  className="service mx-auto  rounded-lg sm:mx-7  md:mx-10  px-4 pt-4 pb-4  shadow hover:md:shadow-lg
