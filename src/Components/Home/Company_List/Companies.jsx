@@ -1,4 +1,4 @@
-import {mw,mw1, pht, pht1, pwc, pwc1, pw, pw1, tra, tra1} from '../images/Company_logo/index.jsx'
+import {mw,mw1, pht, pht1, pwc, pwc1, pw, pw1, tra, tra1} from '../../images/Company_logo/index.jsx'
 
 export default function CmpyList(){
 	return (
