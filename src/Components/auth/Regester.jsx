@@ -18,7 +18,7 @@ import {
 
   
 import axios from 'axios';
-const baseUrl ="http://13.50.177.162:8000"
+const baseUrl ="https://starmakerstest.starmarks.in"
 function Regester() {
 	const navigate = useNavigate();
     const [Name, setName] = useState("");

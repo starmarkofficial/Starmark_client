@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
 import axios from 'axios';
-const baseUrl ="http://13.50.177.162:8000"
+const baseUrl ="https://starmakerstest.starmarks.in"
 function Regester2() {
 	const navigate = useNavigate();
     const [Name, setName] = useState("");

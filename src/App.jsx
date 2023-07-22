@@ -13,8 +13,8 @@ import JobPage from './Components/Pages/JobPage';
 import ProviderPage from './Components/Pages/ProviderPage';
 import UserAuth from './Components/auth/UserAuth';
 import Regester2 from './Components/auth/Regester2';
-import Hero2 from './Components/Hero2'
-import Popup from './Components/Popup'
+import Hero2 from './Components/Home/Hero2'
+import Popup from './Components/Home/Popup'
 import Nav from './Components/Home/Nav';
 
 const router = createBrowserRouter([

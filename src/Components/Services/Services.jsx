@@ -13,8 +13,8 @@ export default function ServicesList({repImage}){
 			<div   className="mt-10 services-container md:w-full sm:flex-none md:flex sm:flex-col lg:flex-row">
 				<div className="services-list md:w-10/12 ml-8 md:ml-10 sm:mx-10">
 				<div class="animate-bounce ml-4 text-white px-3 text-center inline-flex items-center justify-center w-16 h-16  shadow-lg rounded-full bg-blue-300 ">
-       <RocketLaunchIcon/>
-      </div>
+       			<RocketLaunchIcon/>
+     			 </div>
 					<div className='head-text text-bold head-text text-4xl font-bold mx-auto
 					 flex justify-center my-5 ClassProperties font-sans ' >
 						Ultimate Services for your Company.</div>

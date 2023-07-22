@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-const baseUrl ="http://13.48.192.109"
+const baseUrl ="https://starmakerstest.starmarks.in"
 import { useNavigate } from "react-router-dom";
 function Body() {
   const navigate = useNavigate();

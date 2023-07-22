@@ -1,4 +1,4 @@
-import {get_find, profile_add, sign_up, skill_add, ad_banner, img_replc, starmark} from './images'
+import {get_find, profile_add, sign_up, skill_add, ad_banner, img_replc, starmark} from '../images'
 import './Hero2.css'
 import Carousel from './Carousel/Carousel'
 import CompanyList from './Company_List/Companies'
@@ -7,6 +7,7 @@ import CompanyList from './Company_List/Companies'
 import Accordion from './Accordion/index'
 import Footer from './Footer/Footer'
 import { Link } from 'react-router-dom'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
@@ -55,8 +56,13 @@ export default function Hero2(){
 							</div>
 						</li>
 					</ul>
+<<<<<<< HEAD:src/Components/Hero2.jsx
 					
 					<Link data-aos="fade-up"  to="/auth" className=" font-sans create-profile-btn mx-auto my-4 max-w-96 py-2 px-14 block text-center text-white rounded-[10px] bg-blue-500 hover:drop-shadow-xl">Create Profile Now</Link>
+=======
+					<Link data-aos="fade-up"  to="/auth" className=" font-sans create-profile-btn mx-auto my-4 max-w-96 py-2 px-14 block text-center text-white rounded-[10px] bg-[#18A6D0] hover:drop-shadow-xl">Create Profile Now</Link>
+					
+>>>>>>> 0ab948656060c12df0975fc8a095d6b31fedf7e4:src/Components/Home/Hero2.jsx
 				</div>
 				{/* CAROUSEL */}
 				
@@ -79,7 +85,7 @@ export default function Hero2(){
 	           <Browser />
                     </div>
 			<div data-aos="fade-up" className="mb-5 sm:mb-20">
-				<ServicesList repImage={img_replc} />
+				<ServicesList/>
 			</div>
 
 			{/* testimonials */}

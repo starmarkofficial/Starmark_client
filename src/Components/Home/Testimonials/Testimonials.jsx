@@ -11,7 +11,7 @@ import './styles.css';
 import { Navigation } from 'swiper/modules';
 import data from './data.json'
 import Card from './Card'
-import {demo,rating} from "../images/index"
+import {demo,rating} from "../../images/index"
 
 export default function Testimonials() {
 
