@@ -97,15 +97,9 @@ const [state, setState] = React.useState({
     <div>
 
 
-<<<<<<< HEAD
-<nav class="bg-white shadow md:shadow-lg ">
-  <div class="max-w-8xl mx-auto px-4 ">
-    <div class="flex justify-between items-center">
-=======
 <nav className="bg-gray-50 shadow md:shadow-lg ">
   <div className="max-w-8xl mx-auto px-4 ">
     <div className="flex justify-between items-center">
->>>>>>> 0ab948656060c12df0975fc8a095d6b31fedf7e4
 
       <div className="flex space-x-4 ">
     
