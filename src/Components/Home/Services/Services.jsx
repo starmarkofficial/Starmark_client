@@ -11,7 +11,7 @@ export default function ServicesList({}){
 	return(
 		<>
 			<div   className="mt-10 services-container md:w-full sm:flex-none md:flex sm:flex-col lg:flex-row">
-				<div className="services-list md:w-10/12 mx-6 md:ml-10 sm:mx-10">
+				<div className="services-list md:w-10/12 mx-9 md:ml-10 sm:mx-10">
 					<div class="animate-bounce ml-4 text-white px-3 text-center inline-flex items-center justify-center w-16 h-16  shadow-lg rounded-full bg-blue-300 ">
 						<RocketLaunchIcon/>
 					</div>
@@ -26,7 +26,7 @@ export default function ServicesList({}){
 						{/*  option */}	
 						<div  className="service mx-auto  rounded-lg sm:mx-7  md:mx-10  px-4 pt-4 pb-4  shadow hover:md:shadow-lg
 							transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
-							<div  className="bg-gray-200 w-24 h-24 flex justify-center items-center rounded-full">
+							<div  className="bg-gray-200 w-24 h-24 imag flex justify-center items-center rounded-full">
 								<DocumentCheckIcon className="h-12 w-12 text-gray-800"/>
 							</div>
 							
@@ -37,7 +37,7 @@ export default function ServicesList({}){
 						{/*  option */}
 						<div   className="service mx-auto  rounded-lg sm:mx-7  md:mx-10  px-4 pt-4 pb-4 shadow hover:md:shadow-lg
 							transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
-							<div className="bg-gray-200 w-24 h-24 flex justify-center items-center rounded-full">
+							<div className="bg-gray-200 w-24 h-24 imag flex justify-center items-center rounded-full">
 								<PhoneArrowDownLeftIcon className="h-12 w-12 text-gray-800"/>
 							</div>
 							
@@ -48,7 +48,7 @@ export default function ServicesList({}){
 						{/*  option */}
 						<div  className="service mx-auto  rounded-lg sm:mx-7  md:mx-10  px-4 pt-4 pb-4 shadow hover:md:shadow-lg
 							transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
-							<div className="bg-gray-200 w-24 h-24 flex justify-center items-center rounded-full">
+							<div className="bg-gray-200 w-24 h-24 imag flex justify-center items-center rounded-full">
 								<UsersIcon className="h-12 w-12 text-gray-800"/>
 							</div>
 							
@@ -58,7 +58,7 @@ export default function ServicesList({}){
 						{/*  option */}
 						<div  className="service mx-auto  rounded-lg sm:mx-7  md:mx-10  px-4 pt-4 pb-4 shadow hover:md:shadow-lg
 							transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
-							<div className="bg-gray-200 w-24 h-24 flex justify-center items-center rounded-full">
+							<div className="bg-gray-200 w-24 h-24 imag flex justify-center items-center rounded-full">
 								<ClockIcon className="h-12 w-12 text-gray-800"/>
 							</div>
 							
