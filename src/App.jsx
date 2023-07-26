@@ -1,14 +1,11 @@
 import React from 'react'
-import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Navbar from './Components/Home/Navbar'
 import Hero from './Components/Home/Hero'
 import Regester from './Components/auth/Regester';
 import Login from './Components/auth/Login';
-
 import JobPage from './Components/Pages/Jobsearch/jobnotification';
 import ProviderPage from './Components/Pages/ProviderPage';
 import UserAuth from './Components/auth/UserAuth';
@@ -22,7 +19,6 @@ const router = createBrowserRouter([
     path: "/",
     element:<>
     <Nav/>
-  {/* <Navbar/> */}
   <Popup/>
     <Hero/>
     <Hero2/>
