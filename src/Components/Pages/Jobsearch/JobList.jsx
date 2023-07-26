@@ -1,5 +1,5 @@
 import JobCard from './jobcard'
-import './Job.css'
+import  './css/job.css'
 export default function JobList(){
 	return (
 		<>
