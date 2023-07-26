@@ -1,4 +1,4 @@
-import JobCard from './JobCard'
+import JobCard from './jobcard'
 import './Job.css'
 export default function JobList(){
 	return (
