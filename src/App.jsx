@@ -9,7 +9,7 @@ import Hero from './Components/Home/Hero'
 import Regester from './Components/auth/Regester';
 import Login from './Components/auth/Login';
 
-import JobPage from './Components/Pages/JobPage';
+import JobPage from './Components/Pages/Jobsearch/jobnotification';
 import ProviderPage from './Components/Pages/ProviderPage';
 import UserAuth from './Components/auth/UserAuth';
 import Regester2 from './Components/auth/Regester2';
