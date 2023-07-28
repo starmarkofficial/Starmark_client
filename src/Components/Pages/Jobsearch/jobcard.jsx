@@ -1,20 +1,18 @@
 import React from 'react'
 import { Box,Grid,Typography,Button } from '@mui/material'
-export default function JobCard({companyName, role, functionalArea, stateCity, employmentType,admin}){
+export default function JobCard({companyName, role, functionalArea, stateCity, employmentType,JobRoll}){
   return(
     <>
       <div className="job-card mx-auto justify-center mt-2 mb-10 py-4 px-2 sm:py-10 sm:px-6 sm:flex justify-between md:h-[380px]">
         <div className=" left-container details h-full flex flex-col w-full mx-2">
           <div className="details">
             <div className="position text-3xl p-0">
-              {admin}
+              {JobRoll}
             </div>
             <div className="company-name text-[#6C757D] font-semibold text-xl">
               {companyName}
             </div>
-            <div className="role text-[#343A40] font-medium">
-              Role: {role}
-            </div>
+          
             <div className="functional-area text-[#343A40]">
               Fuctional Area: {functionalArea}
             </div>

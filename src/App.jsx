@@ -13,15 +13,19 @@ import Regester2 from './Components/auth/Regester2';
 import Hero2 from './Components/Home/Hero2'
 import Popup from './Components/Home/Popup'
 import Nav from './Components/Home/Nav';
+import UserForm from './Components/Form/UserForm';
+import User from './Components/Profile/User';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<>
-    <Nav/>
-  <Popup/>
-    <Hero/>
-    <Hero2/>
+   
+    <div className="fixed top-0 z-10 bg-gray-50 w-full"><Nav/></div>
+    <div className="fixed top-20 z-20 bg-gray-50 w-full"> <Popup/></div>
+ <div className="mt-20"><Hero/>
+    <Hero2/></div>
+    
     </> ,
     // children: [
     //   {
@@ -45,7 +49,7 @@ const router = createBrowserRouter([
    } ,
    {
     path: "/about",
-    element:<>About us</>
+    element:<><Nav/>About us</>
    } ,
    {
     path: "/jobs",
@@ -53,18 +57,28 @@ const router = createBrowserRouter([
    } ,
    {
     path: "/hire",
-    element:<><ProviderPage/></>
+    element:<><Nav/><ProviderPage/></>
    } ,
    {
     path: "/auth",
     element:<><UserAuth/></>
-   }
+   },
+   {
+    path: "/userForm",
+    element:<><Nav/><UserForm/></>
+   },
+   {
+    path: "/profile",
+    element:<><Nav/><User/></>
+   },
 ]);
 
 function App() {
   return (
     <main>
+      
       <RouterProvider router={router}>
+        
   </RouterProvider>
  </main>
   )

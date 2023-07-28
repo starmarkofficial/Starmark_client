@@ -177,8 +177,8 @@ const [state, setState] = React.useState({
         aria-haspopup="true"
         aria-expanded={open2 ? 'true' : undefined}
         onClick={handleClick2} className='pointer-cursor hidden lg:inline-block py-2 px-6 cursor-pointer
-         bg-blue-100 font-sans  shadow hover:md:shadow-lg
-          text-sm text-blue-500 font-medeum font-bold rounded-3xl transition duration-200 '>
+         bg-blue-200 font-sans  shadow-md hover:md:shadow-xl hover:shawdow-gray-200
+          text-sm text-blue-500 font-medeum font-bold rounded-lg transition duration-200 '>
 						<AccountCircleIcon className='h-6 w-6 text-gray-500'/>&nbsp;{auth?.user?.name}</div>
 	 </>)}
       </div>
