@@ -61,7 +61,7 @@ const [_id, set_id] = useState()
         
         try {
             const {data} = await axios.get(`${baseUrl}/get-Profile/${auth?.user?.email}`)
-            console.log(data.Profile._id);
+            console.log(data.Profile);
 			set_id(data.Profile._id)
 			setProfile({
 				name:`${data.Profile.name}`,
