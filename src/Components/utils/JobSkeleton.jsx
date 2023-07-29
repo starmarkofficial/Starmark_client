@@ -2,7 +2,7 @@ import React from 'react'
 
 function JobSkeleton() {
   return (
-    <div>
+    <div className=' pt-28 '>
     <div class="flex flex-col w-3/4 gap-5 p-2 mx-auto bg-white shadow-xl select-none sm:p-4 sm:h-80 rounded-2xl sm:flex-row ">
         <div class="bg-gray-200 h-52 sm:h-full sm:w-72 rounded-xl animate-pulse">
         </div>

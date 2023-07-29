@@ -15,17 +15,13 @@ import Popup from './Components/Home/Popup'
 import Nav from './Components/Home/Nav';
 import UserForm from './Components/Form/UserForm';
 import User from './Components/Profile/User';
+import UserFormup from './Components/Form/UserUpdateForm';
+import Home from './Components/Pages/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<>
-   
-    <div className="fixed top-0 z-10 bg-gray-50 w-full"><Nav/></div>
-    <div className="fixed top-20 z-20 bg-gray-50 w-full"> <Popup/></div>
- <div className="mt-20"><Hero/>
-    <Hero2/></div>
-    
+    element:<> <Home/>
     </> ,
     // children: [
     //   {
@@ -70,6 +66,10 @@ const router = createBrowserRouter([
    {
     path: "/profile",
     element:<><Nav/><User/></>
+   },
+   {
+    path: "/updateprofile",
+    element:<><Nav/><UserFormup/></>
    },
 ]);
 

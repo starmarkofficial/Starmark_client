@@ -34,7 +34,7 @@ export default function JobList(){
 	
 	return (
 		<>
-			<div className="job-list-container mx-none px-4 pb-10 overflow-y-auto scroll h-screen scrollbar-hide">
+			<div className="pt-28 job-list-container mx-none px-4 pb-10 overflow-y-auto scroll h-screen scrollbar-hide">
 
 			{jobs.map((post) =>
 			

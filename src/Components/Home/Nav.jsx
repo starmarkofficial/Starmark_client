@@ -4,6 +4,11 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import logo from "../Home/assests/logo.png"
 import Typography from '@mui/material/Typography';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 // Icons
 import { HomeIcon } from "@heroicons/react/24/outline";
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
@@ -16,6 +21,7 @@ import { UserPlusIcon } from "@heroicons/react/24/outline";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 //sidebar 
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -26,8 +32,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 
 
 //Link
@@ -35,12 +39,15 @@ import { Link } from "react-router-dom";
 
 //global hooks
 import { useAuth } from '../context/auth';
+import FormDevider from '../Form/FormDevider';
+import { useState } from 'react';
 
 
 function Nav() {
 
     const [auth, setAuth] = useAuth()
-
+  
+  
 	//web dropsown
 	const [anchorE2, setAnchorE2] = React.useState(null);
   const open2 = Boolean(anchorE2);
@@ -69,7 +76,7 @@ const logout =()=>{
 	token: "",
   });
   localStorage.removeItem("auth");
-alert("logout succesfull")
+ 
 
 }
 
@@ -91,13 +98,15 @@ const [state, setState] = React.useState({
     setState({ ...state, [anchor]: open });
   };
 
+  
 
 
   return (
     <div>
 
 
-<nav className="bg-gray-50 shadow md:shadow-lg ">
+<nav className="bg-gray-100 shadow md:shadow-lg  ">
+
   <div className="max-w-8xl mx-auto px-4 ">
     <div className="flex justify-between items-center">
 
@@ -170,8 +179,9 @@ const [state, setState] = React.useState({
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
+      
+    <MenuItem onClick={handleClose}>  <FormDevider/></MenuItem> 
+      <Link to="/profile"><MenuItem onClick={handleClose}>My account</MenuItem></Link> 
         <MenuItem onClick={logout} >Logout</MenuItem>
       </Menu>   <div aria-controls={open2 ? 'basic-menu' : undefined}
         aria-haspopup="true"
@@ -181,7 +191,9 @@ const [state, setState] = React.useState({
           text-sm text-blue-500 font-medeum font-bold rounded-lg transition duration-200 '>
 						<AccountCircleIcon className='h-6 w-6 text-gray-500'/>&nbsp;{auth?.user?.name}</div>
 	 </>)}
+   
       </div>
+      
 
 
       <div className="md:hidden flex items-center ">
