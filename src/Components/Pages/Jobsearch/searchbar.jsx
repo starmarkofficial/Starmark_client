@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import FilterListIcon from '@mui/icons-material/FilterList';
 export default function Searchbar() {
+  
   return (
-    <div className='header_main w-full fixed top-16'>
+    <div className={`header_main  w-full fixed top-16 `}>
        
         <form class="flex items-center px-5 gap-2 py-6 ">
             <button class=" flex bg-blue-300 shadow-lg  hover:shadow-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">

@@ -15,7 +15,7 @@ function UserFormup() {
 
 	const navigate = useNavigate();
 
-const [_id, set_id] = useState("")
+const [_id, set_id] = useState()
 	// Profile
 	const [profile,setProfile]=useState({
 		name:`${auth?.user?.name}`,
@@ -61,7 +61,21 @@ const [_id, set_id] = useState("")
         
         try {
             const {data} = await axios.get(`${baseUrl}/get-Profile/${auth?.user?.email}`)
-            console.log(data);
+            console.log(data.Profile._id);
+			set_id(data.Profile._id)
+			setProfile({
+				name:`${data.Profile.name}`,
+		website:`${data.Profile.links1}`,
+		summary:`${data.Profile.Summary}`,
+			})
+
+			setPerinfo({
+				date:`${data.Profile.Dob}`,
+		phone:`${data.Profile.phone}`,
+		email:`${auth?.user?.email}`,
+		address:`${data.Profile.address}`,
+		blood:`${data.Profile.blood}`,
+			})
         } catch (error) {
           console.log(error);  
         }
