@@ -1,14 +1,16 @@
 import React from 'react'
 import { useAuth } from '../context/auth';
+import { MessageDialog } from './HirePage/InputBox';
 
 function ProviderPage() {
     const [auth] = useAuth();
+    
   return (
     <div>
          <div className="container-fluid m-3 p-3 dashboard">
         <div className="row">
           <div className="col-md-3">
-           
+           <MessageDialog/>
           </div>
           <div className="col-md-9">
             <div className="card w-75 p-3">

@@ -17,6 +17,7 @@ import UserForm from './Components/Form/UserForm';
 import User from './Components/Profile/User';
 import UserFormup from './Components/Form/UserUpdateForm';
 import Home from './Components/Pages/Home';
+import CompanyForm from './Components/Form/CompanyForm';
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
    {
     path: "/updateprofile",
     element:<><Nav/><UserFormup/></>
+   },
+   {
+    path: "/companyform",
+    element:<><CompanyForm/></>
    },
 ]);
 
