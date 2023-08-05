@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from '../context/auth';
 //axios
 import axios from 'axios';
-const baseUrl ="https://starmark-server.onrender.com"
+const baseUrl ="https://starmark-serverside.onrender.com"
 
 function Form() {
     const [auth, setAuth] = useAuth()

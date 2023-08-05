@@ -20,7 +20,7 @@ import { useAuth } from '../context/auth';
 
 //axios
 import axios from 'axios';
-const baseUrl ="http://localhost"
+const baseUrl ="https://starmark-serverside.onrender.com"
 
 
 

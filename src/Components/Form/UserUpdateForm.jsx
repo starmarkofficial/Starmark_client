@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 //axios
 import axios from 'axios';
-const baseUrl ="https://starmark-server.onrender.com"
+const baseUrl ="https://starmark-serverside.onrender.com"
 //global hooks
 import { useAuth } from '../context/auth';
 

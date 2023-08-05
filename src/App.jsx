@@ -18,6 +18,7 @@ import User from './Components/Profile/User';
 import UserFormup from './Components/Form/UserUpdateForm';
 import Home from './Components/Pages/Home';
 import CompanyForm from './Components/Form/CompanyForm';
+import Aboutus from './Components/Pages/About/About';
 
 const router = createBrowserRouter([
   {
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
    } ,
    {
     path: "/about",
-    element:<><Nav/>About us</>
+    element:<><Nav/><Aboutus/></>
    } ,
    {
     path: "/jobs",

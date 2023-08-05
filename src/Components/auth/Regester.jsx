@@ -18,7 +18,7 @@ import {
 
   
 import axios from 'axios';
-const baseUrl ="http://localhost"
+const baseUrl ="https://starmark-serverside.onrender.com"
 function Regester() {
 	const navigate = useNavigate();
     const [Name, setName] = useState("");

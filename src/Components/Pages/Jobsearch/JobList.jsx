@@ -6,7 +6,7 @@ import  './css/job.css'
 import axios from 'axios';
 import JobSkeleton from '../../utils/JobSkeleton';
 
-const baseUrl ="https://starmark-server.onrender.com"
+const baseUrl ="https://starmark-serverside.onrender.com"
 
 export default function JobList(){
 	const [jobs, setJobs] = useState([])
