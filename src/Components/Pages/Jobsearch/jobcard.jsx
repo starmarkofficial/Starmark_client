@@ -8,7 +8,7 @@ import Stack from '@mui/material/Stack';
 import Ratings from '../../utils/Ratings';
 import { ClockIcon } from "@heroicons/react/24/outline";
 
-export default function JobCard({companyName, role, functionalArea, stateCity, employmentType,JobRoll}){
+export default function JobCard({companyName,employment_type, role, functionalArea, stateCity, employmentType,JobRoll}){
   return(
     <>    <div className='md:w-4/5 bg-indigo-100 shadow-lg  rounded-lg mx-auto justify-center mb-10 ' >
    
@@ -39,7 +39,7 @@ export default function JobCard({companyName, role, functionalArea, stateCity, e
             <BriefcaseIcon  className="h-5 w-5 text-gray-500" /> Experience: null
             </div>
             <div className="state-city text-[#343A40] flex gap-1">
-            <BuildingOffice2Icon  className="h-5 w-5 text-gray-500" /> Shift: null
+            <BuildingOffice2Icon  className="h-5 w-5 text-gray-500" /> Shift: {employment_type}
             </div>
             <div className="state-city text-[#343A40] flex gap-1">
             <CurrencyRupeeIcon className="h-5 w-5 text-gray-500" />  Not disclosed

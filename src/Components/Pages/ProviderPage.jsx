@@ -1,9 +1,34 @@
-import React from 'react'
+import { useState ,useEffect} from 'react';
+const baseUrl ="https://starmark-serverside.onrender.com"
+import axios from 'axios';
 import { useAuth } from '../context/auth';
 import { MessageDialog } from './HirePage/InputBox';
+import CompanyForm from '../Form/CompanyForm';
 
 function ProviderPage() {
     const [auth] = useAuth();
+    const [company, setcompany] = useState([])
+
+    const getcompany= async()=>{
+      try {
+        axios
+        .get(`${baseUrl}/get-company/${auth?.user?.email}`)
+        .then(({ data }) => {
+        
+          setcompany(data.company)
+          console.log(data.company);
+        })
+  
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  
+    useEffect(() => {
+      getcompany()
+      }, [])
+  
+      if(!company) return <CompanyForm/>
     
   return (
     <div>

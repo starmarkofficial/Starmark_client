@@ -46,7 +46,8 @@ export default function JobList(){
 					companyName={post.company_name}
 					functionalArea={post.Location}
 					stateCity="Chennai" 
-					employmentType={post.employment_type}
+					employment_type={post.employment_type}
+					
 				/>
 		 
           </>

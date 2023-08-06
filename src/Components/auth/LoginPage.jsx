@@ -34,7 +34,7 @@ import {
 	Checkbox,
   } from "@material-tailwind/react";
 
-function Login() {
+function LoginPage() {
 
 
 const navigate = useNavigate();
@@ -80,29 +80,20 @@ const UserRegester = async(e)=>{
 }
   return (
 
-    <div className=' '>
-		<div onClick={handleOpen} className='font-sans hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200 '>
-					Log In</div>
+    <div className='bg-gray-100'>
 		
-		<Dialog
-        size="xs"
-        open={open}
-        handler={handleOpen}
-        className="bg-transparent shadow-none"
-      >
-        <Card className="mx-auto w-full max-w-[24rem]">
-          <CardHeader
-            variant="gradient"
-            color="blue"
-            className="mb-4 grid h-28 place-items-center"
-			
-          >
-            <Typography variant="h3" color="white">
-              Sign In
-            </Typography>
-          </CardHeader>
-		  <div className="px-8 mb-3 ">
-		  <LoginSocialGoogle
+
+
+	  
+		<div class="h-screen py-20">
+	<div class="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
+		  <div class="hidden lg:block lg:w-1/2 bg-cover" style={{ 
+      backgroundImage: `url("https://images.pexels.com/photos/5076516/pexels-photo-5076516.jpeg?auto=compress&cs=tinysrgb&w=600")` 
+    }}></div>
+		  <div class="w-full p-8 lg:w-1/2">
+			  <h2 class="text-2xl font-semibold text-gray-700 text-center">Brand</h2>
+			  <p class="text-xl text-gray-600 text-center">Welcome back!</p>
+			  <LoginSocialGoogle
         client_id={"546215725537-rfvubcvfo97fnqdvlmhc17uda31aofhb.apps.googleusercontent.com"}
         scope="openid profile email"
         discoveryDocs="claims_supported"
@@ -152,54 +143,7 @@ try {
 					  </svg>
 				  </div>
 				  <h1 class="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">Sign in with Google</h1>
-			  </div></LoginSocialGoogle></div>
-			  <div class="mt-4 flex items-center justify-between">
-				  <span class="border-b w-1/5 lg:w-1/4"></span>
-				  <a href="#" class="text-xs text-center text-gray-500 uppercase">or login with email</a>
-				  <span class="border-b w-1/5 lg:w-1/4"></span>
-			  </div>
-          <CardBody className="flex flex-col gap-4">
-            <Input value={email}
-          onChange={(e) => setemail(e.target.value)}  label="Email" size="lg" />
-            <Input value={password}
-          onChange={(e) => setPassword(e.target.value)} label="Password" size="lg" />
-            
-          </CardBody>
-		 
-          <CardFooter className="pt-0">
-            <Button variant="gradient" onClick={UserRegester}   fullWidth>
-              Sign In
-            </Button>
-            <Typography variant="small" className="mt-6 flex justify-center">
-              Don&apos;t have an account?
-              <Typography
-                as="a"
-                href="/signup"
-                variant="small"
-                color="blue"
-                className="ml-1 font-bold"
-                onClick={handleOpen}
-              >
-                Sign up
-              </Typography>
-            </Typography>
-          </CardFooter>
-        </Card>
-      </Dialog>
-
-
-
-{/* 
-	  
-		<div class="h-screen py-10">
-	<div class="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
-		  <div class="hidden lg:block lg:w-1/2 bg-cover" style={{ 
-      backgroundImage: `url("https://images.pexels.com/photos/5076516/pexels-photo-5076516.jpeg?auto=compress&cs=tinysrgb&w=600")` 
-    }}></div>
-		  <div class="w-full p-8 lg:w-1/2">
-			  <h2 class="text-2xl font-semibold text-gray-700 text-center">Brand</h2>
-			  <p class="text-xl text-gray-600 text-center">Welcome back!</p>
-			  
+			  </div></LoginSocialGoogle>
 			  <div class="mt-4 flex items-center justify-between">
 				  <span class="border-b w-1/5 lg:w-1/4"></span>
 				  <a href="#" class="text-xs text-center text-gray-500 uppercase">or login with email</a>
@@ -232,11 +176,11 @@ try {
   </div>
 
 
- */}
+
 
      
     </div>
   )
 }
 
-export default Login
+export default LoginPage

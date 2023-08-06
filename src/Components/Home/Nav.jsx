@@ -41,6 +41,8 @@ import { Link } from "react-router-dom";
 import { useAuth } from '../context/auth';
 import FormDevider from '../Form/FormDevider';
 import { useState } from 'react';
+import Login from '../auth/Login';
+
 
 
 function Nav() {
@@ -161,10 +163,10 @@ const [state, setState] = React.useState({
 
       <div className="hidden md:flex items-center space-x-1">
       {
-				(!auth.user)?(<div className="">
-				<Link to="/login" className='font-sans hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200 '>
-					Log In</Link>
-		
+				(!auth.user)?(<div className="flex gap-2">
+				{/* <Link to="/login" className='font-sans hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200 '>
+					Log In</Link> */}
+		<Login/>
 				<Link to="/auth" className="hidden lg:inline-block " >
                 <button className="group relative h-8 w-24 overflow-hidden rounded-lg bg-blue-400 text-lg shadow">
     <div className="absolute inset-0 w-0 bg-white text-white transition-all duration-[250ms] ease-out group-hover:w-full"></div>

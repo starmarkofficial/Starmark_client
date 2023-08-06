@@ -19,6 +19,7 @@ import UserFormup from './Components/Form/UserUpdateForm';
 import Home from './Components/Pages/Home';
 import CompanyForm from './Components/Form/CompanyForm';
 import Aboutus from './Components/Pages/About/About';
+import Dashboard from './Components/Pages/Admin/Dashboard';
 
 const router = createBrowserRouter([
   {
@@ -74,8 +75,8 @@ const router = createBrowserRouter([
     element:<><Nav/><UserFormup/></>
    },
    {
-    path: "/companyform",
-    element:<><CompanyForm/></>
+    path: "/dashboard",
+    element:<><Dashboard/></>
    },
 ]);
 

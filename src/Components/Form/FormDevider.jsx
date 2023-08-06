@@ -31,7 +31,7 @@ function FormDevider() {
     }, [])
   return (
     <div>
-      	{(auth?.user?.role == 1)?<Link to="/companyform">Dashboard</Link>:<>{
+      	{(auth?.user?.role == 1)?<Link to="/dashboard">Dashboard</Link>:<>{
             (!profile)?<>
             <Link to="/userForm">Add Profile</Link>
             </>:<>

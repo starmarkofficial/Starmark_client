@@ -9,7 +9,14 @@ import {
   Textarea,
 } from "@material-tailwind/react";
 import JobPostForm from "../../Form/JobPostForm";
- 
+
+
+
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
+import EditIcon from '@mui/icons-material/Edit';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import NavigationIcon from '@mui/icons-material/Navigation';
 export function MessageDialog() {
   const [open, setOpen] = React.useState(false);
  
@@ -17,21 +24,21 @@ export function MessageDialog() {
  
   return (
     <>
-      <Button  onClick={handleOpen}>Message Dialog</Button>
+      <div onClick={handleOpen}><Fab color="primary" aria-label="add">
+        <AddIcon />
+      </Fab></div>
       
-      <Dialog className="justify-center items-center w-20" open={open} handler={handleOpen}>
+      <Dialog className="justify-center items-center " open={open} handler={handleOpen}>
         
-        <DialogBody divider>
+        <DialogBody divider><div onClick={handleOpen} className="flex justify-end cursor-pointer ">
+          
+          <Button className=" bg-red-400 text-white rounded-lg">X cancel</Button>
+          </div>
          <JobPostForm/>
         </DialogBody>
         <DialogFooter className="space-x-2">
           
-          <div class="pt-4 flex items-center space-x-4 w-full">
-                <button onClick={handleOpen} class="flex justify-center items-center w-full text-gray-900 px-4 py-3 rounded-md focus:outline-none">
-                  <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> Cancel
-                </button>
-                <button class="w-3/4 bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Create</button>
-            </div>
+     
         </DialogFooter>
       </Dialog>
     </>

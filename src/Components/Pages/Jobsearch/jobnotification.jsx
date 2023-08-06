@@ -1,12 +1,13 @@
 import React from 'react'
 import { useAuth } from '../../context/auth';
 import Searchbar from './searchbar';
-import Login from '../../auth/Login';
+
 import Navbar from '../../Home/Nav'
 import JobList from './JobList';
+import LoginPage from '../../auth/LoginPage';
 export default function Jobnotification() {
   const [auth] = useAuth();
-  if(!auth?.user) return <Login/>
+  if(!auth?.user) return <LoginPage/>
   
   return (
     <div className='h-screen overflow-y-auto scroll  scrollbar-hide'>
